@@ -33,6 +33,15 @@ public class UnixTimeExpansion extends PlaceholderExpansion {
 
     @Override
     public String onPlaceholderRequest(Player player, @NotNull String params) {
+        
+        if (params.equalsIgnoreCase("now")) {
+            return String.valueOf(System.currentTimeMillis() / 1000L);
+        }
+        
+        if (params.equalsIgnoreCase("now_millis")) {
+            return String.valueOf(System.currentTimeMillis());
+        }
+        
         String timeInput;
         String formatPattern;
 
