@@ -9,3 +9,7 @@ Example:
 It also supports placeholder nesting
 
 `%unixtime_{pinataparty_last_vote_time}_dd.MM.yyyy-HH:mm:ss%`
+
+And get now's timestamp
+
+`%unixtime_now[_millis]%`
